@@ -1,0 +1,132 @@
+/* ===========================================         =================================================== */
+/* ===========================================  Footer =================================================== */
+/* ===========================================         =================================================== */
+
+.footer {
+   position: fixed;
+   left: 0px;
+   bottom: 0px;
+   height: 65px;
+   width: 100%;
+   background-color: #6F588F ;
+   text-align: center;
+}
+
+
+@media (min-width: 200px) and (max-width: 480px) {
+  .social-media {
+    width: 100%;
+  }
+}
+
+
+
+.social-media {
+   list-style-type: none;
+   padding: 0;
+   margin: 0 auto;
+   overflow: hidden;
+   background-color: #6F588F ;
+   padding-top: 10px;
+   padding-bottom: 15px;
+   display: inline-block;
+   width: 80%;
+}
+
+
+
+.social-media>li {
+    display: block;
+    float: left
+}
+
+.social-media a {
+
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+
+}
+
+/* Cool hover effects */ 
+
+.social-media a:before,
+.social-media a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.social-media a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+
+.social-media a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.social-media:hover,
+.social-media .current a { 
+  color: #ffffff;
+}
+.social-media a:hover:before,
+.social-media .current a:before,
+.social-media a:hover:after,
+.social-media .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+/* Manual fixes for logos */
+.social-media>li:last-child {
+    margin-right: 0px
+}
+.social-media li {
+   width: 16.6%;
+   text-align: center;
+}
+#github img {
+  margin-top: 2px;
+    height: 40px;
+    width: 40px
+}
+#twitter img {
+    margin-top: 6px;
+    height: 40px;
+    width: 40px
+}
+#linkedin img {
+    height: 40px;
+    width: 40px
+}
+#dribbble img {
+    margin-top: 6px;
+    height: 40px;
+    width: 40px
+}
+#behance img {
+    margin-top: 8px;
+    height: 40px;
+    width: 40px
+}
+#medium img {
+    margin-top: 5px;
+    height: 40px;
+    width: 40px
+}

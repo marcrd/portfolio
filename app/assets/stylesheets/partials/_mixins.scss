@@ -1,0 +1,165 @@
+/* Sweep To Right on hover, modified from http://ianlunn.github.io/Hover/ */
+#homebutton {
+
+  font-family: "proxima-nova", sans-serif;
+  color: #fefefe; 
+  font-weight: 600px; 
+  font-size: 28px;
+  background-color: transparent;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 3px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+
+}
+
+#homebutton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ddd;
+  opacity: .6;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+#homebutton:hover, #homebutton:focus, #homebutton:active {
+
+  color: #fefefe;
+
+}
+
+#homebutton:hover:before, .hvr-sweep-to-right:focus:before, #homebutton:active:before {
+
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+
+}
+
+/* ===========================================                  =================================================== */
+/* ===========================================  Animated clouds =================================================== */
+/* ===========================================                  =================================================== */
+
+    .sky {
+      height:280px;
+      background: transparent;
+      position:relative;
+      overflow:hidden;
+      -webkit-animation:sky_background 50s ease-out infinite;
+      -moz-animation:sky_background 50s ease-out infinite;
+      -o-animation:sky_background 50s ease-out infinite;
+      -webkit-transform:translate3d(0,0,0);
+      -moz-transform:translate3d(0,0,0);
+      -o-transform:translate3d(0,0,0)
+    } 
+    
+    
+    
+    .clouds-one {
+      background:url("Cloud1.png");
+      position:absolute;
+      left:0;
+      top:0;
+      height:150px;
+      width:300%;
+      -webkit-animation:cloud_one 60s linear infinite;
+      -moz-animation:cloud_one 60s linear infinite;
+      -o-animation:cloud_one 60s linear infinite;
+      -webkit-transform:translate3d(0,0,0);
+      -moz-transform:translate3d(0,0,0);
+      -o-transform:translate3d(0,0,0)
+    }
+    
+
+   .clouds-two {
+      background:url("Cloud3.png");
+      position:absolute;
+      left:0;
+      margin-top: 75px;
+      top:0; 
+      height:210px;
+      width:300%;
+      -webkit-animation:cloud_three 100s linear infinite;
+      -moz-animation:cloud_three 100s linear infinite;
+      -o-animation:cloud_three 100s linear infinite;
+      -webkit-transform:translate3d(0,0,0);
+      -moz-transform:translate3d(0,0,0);
+      -o-transform:translate3d(0,0,0)
+    } 
+    
+    
+    
+    @-webkit-keyframes cloud_one {
+      0% {
+        left:0
+      }
+    
+      100% {
+        left:-200%
+      }
+    }
+    
+    @-webkit-keyframes cloud_three {
+      0% {
+        left:0
+      }
+    
+      100% {
+        left:-200%
+      }
+    }
+    
+    
+    
+    @-moz-keyframes cloud_one {
+      0% {
+        left:0
+      }
+    
+      100% {
+        left:-200%
+      }
+    }
+    
+    
+    
+    @-moz-keyframes cloud_three {
+      0% {
+        left:0
+      }
+    
+      100% {
+        left:-200%
+      }
+    }

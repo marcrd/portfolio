@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <%= stylesheet_link_tag 'application', media: 'all',
+                                           'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <script src="https://use.typekit.net/sdm4min.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="background">
+    </div>
+
+   <div id="clouds">
+      <div class="cloud x1"></div>
+      <!-- Time for multiple clouds to dance around -->
+      <div class="cloud x2"></div>
+      <div class="cloud x3"></div>
+      <div class="cloud x4"></div>
+      <div class="cloud x5"></div>
+  </div>
+
+    <div class="center_text">
+      <h2> Hi! My name is </h2>
+      <h1 id="marc"> Marc Rudkowski </h1>
+      <h3> A front end developer with </h3>
+      <h3> a passion for design </h3>
+    </div>
+
+    <div class="call-button">
+      
+      
+
+      
+    </div>
+
+    <div class="footer"> 
+      <ul class="social-media">
+       <li id="github"><%=link_to image_tag("Github.png"), "https://github.com/marcrd" %></li>
+       <li id="twitter"><%=link_to image_tag("Twitter.png"), "https://twitter.com/inacubicle" %></li>
+       <li id="linkedin"><%=link_to image_tag("Linkedin.png"), "https://www.linkedin.com/in/marudkowski" %></li>
+       <li id="dribbble"><%=link_to image_tag("Dribbble.png"), "https://dribbble.com/marcrudkowski" %></li>
+       <li id="behance"><%=link_to image_tag("Behance.png"), "https://www.behance.net/marcrudkowski" %></li>
+       <li id="medium"><%=link_to image_tag("Medium.png"), "https://medium.com/@marcrudkowski" %></li>
+      </ul>
+    </div>
+
+  </body>
+</html>

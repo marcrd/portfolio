@@ -1,4 +1,5 @@
-
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import "partials/variables";
 @import "partials/normalize";
 @import "partials/base";
@@ -32,13 +33,13 @@ html,body {
 .call-button {
 
    text-align: center;
-   margin-top: 3%;
+   margin-top: 2%;
 
 }
 
 
 #marc {
 
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 

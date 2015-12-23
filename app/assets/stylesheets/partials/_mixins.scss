@@ -60,7 +60,7 @@
 
 }
 
-#homebutton:hover:before, .hvr-sweep-to-right:focus:before, #homebutton:active:before {
+#homebutton:hover:before, #homebutton:focus:before, #homebutton:active:before {
 
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -88,11 +88,12 @@
     
     .clouds-one {
       background:url("Cloud1.png");
+      background-size: 150px 200px;
       position:absolute;
       left:0;
       top:0;
-      height:150px;
-      width:300%;
+      height:100px;
+      width:200%;
       -webkit-animation:cloud_one 60s linear infinite;
       -moz-animation:cloud_one 60s linear infinite;
       -o-animation:cloud_one 60s linear infinite;
@@ -104,12 +105,13 @@
 
    .clouds-two {
       background:url("Cloud3.png");
+      background-size: 120px 250px;
       position:absolute;
       left:0;
       margin-top: 75px;
       top:0; 
-      height:210px;
-      width:300%;
+      height:150px;
+      width:200%;
       -webkit-animation:cloud_three 100s linear infinite;
       -moz-animation:cloud_three 100s linear infinite;
       -o-animation:cloud_three 100s linear infinite;

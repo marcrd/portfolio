@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'static_pages/hello'
-
-#  get 'static_pages/hello'
+  get 'page/project'
 
   root 'static_pages#hello'
 

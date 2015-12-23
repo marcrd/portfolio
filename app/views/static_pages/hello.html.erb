@@ -1,2 +1,42 @@
-<h1>StaticPages#hello</h1>
-<p>Find me in app/views/static_pages/hello.html.erb</p>
+<!DOCTYPE html>
+<html>
+
+  <body class="home">
+
+    <div class="background">
+    </div>
+
+    <div class="sky">
+    
+        <div class="clouds-one"></div>
+
+        <div class="clouds-two"></div>
+
+    </div>
+
+    <div class="center_text">
+      <h2> Hi! My name is </h2>
+      <h1 id="marc"> Marc Rudkowski </h1>
+      <h3> A front end developer with </h3>
+      <h3> a passion for design </h3>
+    </div>
+
+    <div class="call-button">
+      
+      <a href="page/project" class="button"><button type="button" id="homebutton">See My Projects</button></a>
+
+    </div>
+
+    <div class="footer"> 
+      <ul class="social-media">
+       <li id="github"><%=link_to image_tag("Github.png"), "https://github.com/marcrd" %></li>
+       <li id="twitter"><%=link_to image_tag("Twitter.png"), "https://twitter.com/inacubicle" %></li>
+       <li id="linkedin"><%=link_to image_tag("Linkedin.png"), "https://www.linkedin.com/in/marudkowski" %></li>
+       <li id="dribbble"><%=link_to image_tag("Dribbble.png"), "https://dribbble.com/marcrudkowski" %></li>
+       <li id="behance"><%=link_to image_tag("Behance.png"), "https://www.behance.net/marcrudkowski" %></li>
+       <li id="medium"><%=link_to image_tag("Medium.png"), "https://medium.com/@marcrudkowski" %></li>
+      </ul>
+    </div>
+
+  </body>
+</html>

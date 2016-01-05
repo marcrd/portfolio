@@ -72,7 +72,7 @@
 /* ===========================================                  =================================================== */
 
     .sky {
-      height:280px;
+      height:260px;
       background: transparent;
       position:relative;
       overflow:hidden;
@@ -88,12 +88,12 @@
     
     .clouds-one {
       background:url("Cloud1.png");
-      background-size: 150px 200px;
+ 
       position:absolute;
       left:0;
       top:0;
-      height:100px;
-      width:200%;
+      height:240px;
+      width:300%;
       -webkit-animation:cloud_one 60s linear infinite;
       -moz-animation:cloud_one 60s linear infinite;
       -o-animation:cloud_one 60s linear infinite;
@@ -105,13 +105,13 @@
 
    .clouds-two {
       background:url("Cloud3.png");
-      background-size: 120px 250px;
+
       position:absolute;
       left:0;
-      margin-top: 75px;
+      margin-top: 50px;
       top:0; 
-      height:150px;
-      width:200%;
+      height:180px;
+      width:300%;
       -webkit-animation:cloud_three 100s linear infinite;
       -moz-animation:cloud_three 100s linear infinite;
       -o-animation:cloud_three 100s linear infinite;

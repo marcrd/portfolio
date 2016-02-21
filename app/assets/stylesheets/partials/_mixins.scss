@@ -1,77 +1,228 @@
-/* Sweep To Right on hover, modified from http://ianlunn.github.io/Hover/ */
-#homebutton {
+.nav a {
 
-  font-family: "proxima-nova", sans-serif;
-  color: #fefefe; 
-  font-weight: 600px; 
-  font-size: 28px;
-  background-color: transparent;
-  border-color: #fff;
-  border-style: solid;
-  border-radius: 5px;
-  border-width: 3px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
+  color: rgba(255, 255, 255, 0.5);
   position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  letter-spacing: 1px;
+  text-decoration: none;
+} 
 
+.nav a:hover {
+
+  color: #fff;
 
 }
-
-#homebutton:before {
-  content: "";
+.nav a:before,
+.nav a:after {
   position: absolute;
-  z-index: -1;
-  top: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.nav a:before {
+  bottom: 20%;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #fff;
+}
+.nav a:after {
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ddd;
-  opacity: .6;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  top: 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
 }
 
-#homebutton:hover, #homebutton:focus, #homebutton:active {
+.nav a:hover:before,
+.nav .current a:before {
 
-  color: #fefefe;
-
+  opacity: 1;
+  width: 50%;
 }
 
-#homebutton:hover:before, #homebutton:focus:before, #homebutton:active:before {
-
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-
+.nav a:hover:after,
+.nav .current a:after {
+  max-width: 50%;
 }
 
-/* ===========================================                  =================================================== */
+/* ===========================================                                                 =================================================== */
+/* ===========================================  Dribbble Behance Underline  =================================================== */
+/* ===========================================                                                 =================================================== */
+
+
+
+
+.build {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.build:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+
+.build:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #FA4388;
+    transition: width .5s ease;
+}
+
+.build:hover:before {
+    width: 100%;
+    background: #FA4388;
+    transition: width .5s ease;
+}
+.build:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+.build {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.build:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+
+.build:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #FA4388;
+    transition: width .5s ease;
+}
+.build:hover:before {
+    width: 100%;
+    background: #FA4388;
+    transition: width .5s ease;
+}
+.build:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+
+//------------------//
+
+.buildtwo {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.buildtwo:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+
+.buildtwo:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #0071FF;
+    transition: width .5s ease;
+}
+
+.buildtwo:hover:before {
+    width: 100%;
+    background: #0071FF;
+    transition: width .5s ease;
+}
+
+.buildtwo:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+.buildtwo {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.buildtwo:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+
+.buildtwo:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #0071FF;
+    transition: width .5s ease;
+}
+.buildtwo:hover:before {
+    width: 100%;
+    background:#0071FF;
+    transition: width .5s ease;
+}
+
+.buildtwo:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+
+/* ===========================================                              =================================================== */
 /* ===========================================  Animated clouds =================================================== */
-/* ===========================================                  =================================================== */
+/* ===========================================                              =================================================== */
 
     .sky {
+
       height:260px;
       background: transparent;
       position:relative;
@@ -81,7 +232,8 @@
       -o-animation:sky_background 50s ease-out infinite;
       -webkit-transform:translate3d(0,0,0);
       -moz-transform:translate3d(0,0,0);
-      -o-transform:translate3d(0,0,0)
+      -o-transform:translate3d(0,0,0);
+
     } 
     
     
@@ -165,3 +317,32 @@
         left:-200%
       }
     }
+
+
+
+/* ===========================================                              =================================================== */
+/* ===========================================        Buttons          =================================================== */
+/* ===========================================                              =================================================== */
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.button:hover, .button:focus, .button:active {
+
+  background-color:rgba(255,255,255,0.5);
+  color: white;
+
+}
+
+

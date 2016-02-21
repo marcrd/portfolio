@@ -1,42 +1,145 @@
 <!DOCTYPE html>
-<html>
 
-  <body class="home">
+  <html>
 
-    <div class="background">
-    </div>
+       <body class="home">
 
-    <div class="sky">
+          <header>
+            
+              <ul class="nav">
+                 
+                  <li id="twitternav" class="aligner"><%=link_to image_tag("Twitter.png"),  "https://twitter.com/inacubicle", :target => "_blank"%></li>
+                  <li id="githubnav"><%=link_to image_tag("github.png"), "https://github.com/marcrd", :target => "_blank" %></li>
+                   <li id="linkedinnav"><%=link_to image_tag("Linkedin.png"), "https://www.linkedin.com/in/marudkowski", :target => "_blank"%></li>
+                  <li><a href="#">Blog</a></li>
+                   <li><a href="#">Contact</a></li>
+                   <li><a href="#">Work</a></li>
+
+              </ul>
+
+          </header>
+
+
+
+
+          <section id="hero1" class="hero is-fullheight">
+
+                    <div class="sky">
+            
+                              <div class="clouds-one"></div>
+
+                              <div class="clouds-two"></div>
+
+                    </div>
+
+
+              <div class="hero-content">
+                  <div class="container">
+              
+                   
+                       <div class="centertext">
+
+                           <h2> Hi! My name is </h2>
+                            <h1 id="marc"> Marc Rudkowski </h1>
+                            <h3> A front end developer with a passion for product design </h3>
+                            <span> <%=link_to image_tag("DownButton.png"), "#" %></li> </span>
+
+                      </div>
+
+            </div>
+
+          </section>
+
+
+          <section class="hero is-medium" id="recent">
+            <div class="hero-content">
+                <div class="container">
+                    <span id="paintbrush"><%=link_to image_tag("Paintbrush.png") %></span>
+                    <h3 id="painttext">I build things. Here’s some of my most recent work. Also checkout my <span class="build" id="dribbblepink"><a href="https://dribbble.com/marcrudkowski" target="_blank">Dribbble</a></span> and <span class="buildtwo" id="behanceblue"><a href="https://www.behance.net/marcrudkowski" target="_blank">Behance</a></span>!</h3>
+
+                </div>
+            </div>
+        </section>
+
+
+       <section class="hero is-large" id="livefire">
+               <div class="hero-content">
+                  <div class="container">
+                    <span id="livefireimg"><%=link_to image_tag("Livefire.png") %></span>
+                    <h2>Livefire</h2>
+                    <h3>Livestreaming web app I built out to compete in the gaming and creative market </h3>
+                   <div id="bluediv"> <a class="button is-large blue light">See Case Study</a> </div>
+                </div>
+            </div>
+        </section>
+
+           <section class="hero is-large" id="xpertdental">
+               <div class="hero-content">
+                <div class="container">
+                    <span id="expertdentalimg"><%=link_to image_tag("XpertDental.png") %></span>
+                    <h2>Cedarhurst Dentist</h2>
+                    <h3>Responsive Concept Redesign for XpertDental, to increase usability and add brand value </h3>
+                    <a class="button is-large green dark">See on Behance</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="hero is-large" id="illustration">
+             <div class="hero-content">
+                <div class="container">
+                    <span id="dukechapel"><%=link_to image_tag("Dukechapel.png") %></span>
+                    <h2>Illustration Series</h2>
+                    <h3>I love to make illustrations, and do it quite often. You should check them out!</h3>
+                    <a class="button is-large pink light">See my Dribbble</a>
+                </div>
+            </div>
+        </section>
+        
+      <!--  <section class="hero is-large" id="dot">
+             <div class="hero-content">
+                <div class="container">
+                    <span id="dotlogo"><%=link_to image_tag("Dotlogo.png") %></span>
+                    <h2>Dot Powered</h2>
+                    <h3>I do some pretty cool stuff wtih big data AI and neural networks.  </h3>
+                    <a class="button is-large light lightred">View Website</a>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="hero is-large" id="github">
+             <div class="hero-content">
+                <div class="container">
+                    <span id="paintbrush"><%=link_to image_tag("GithubLarge.png") %></span>
+                    <h2>Developer Series</h2>
+                    <h3>Did I mention I’m a developer? You can see some of my hackathon projects, my portfolio code and side projects</h3>
+                    <a class="button is-large purple light">Check My Github</a>
+                </div>
+            </div>
+        </section>
+
+          <section class="hero is-medium" id="message">
+             <div class="hero-content">
+                <div class="container">
+                    <span id="paintbrush"><%=link_to image_tag("Message.png") %></span>
+                    <h3 class="dark">Feel free to drop me a line or contact me at <a href= "mailto:marc.rudkowski@gmail.com">marc.rudkowski@gmail.com</a></h3>
+                    
+                </div>
+            </div>
+        </section>
     
-        <div class="clouds-one"></div>
 
-        <div class="clouds-two"></div>
+   <!--
 
-    </div>
-
-    <div class="center_text">
-      <h2> Hi! My name is </h2>
-      <h1 id="marc"> Marc Rudkowski </h1>
-      <h3> A front end developer with </h3>
-      <h3> a passion for design </h3>
-    </div>
-
-    <div class="call-button">
-      
-      <a href="page/project" class="button"><button type="button" id="homebutton">See My Projects</button></a>
-
-    </div>
-
-    <div class="footer"> 
+     <div class="footer"> 
       <ul class="social-media">
-       <li id="github"><%=link_to image_tag("github.png"), "https://github.com/marcrd" %></li>
+       <li id="githubimg"><%=link_to image_tag("github.png"), "https://github.com/marcrd" %></li>
        <li id="twitter"><%=link_to image_tag("Twitter.png"), "https://twitter.com/inacubicle" %></li>
        <li id="linkedin"><%=link_to image_tag("Linkedin.png"), "https://www.linkedin.com/in/marudkowski" %></li>
        <li id="dribbble"><%=link_to image_tag("Dribbble.png"), "https://dribbble.com/marcrudkowski" %></li>
        <li id="behance"><%=link_to image_tag("Behance.png"), "https://www.behance.net/marcrudkowski" %></li>
        <li id="medium"><%=link_to image_tag("Medium.png"), "https://medium.com/@marcrudkowski" %></li>
       </ul>
-    </div>
+    </div> -->
 
   </body>
 </html>

@@ -17,7 +17,8 @@ html, body {
 
       margin:0;
       height:100%;
-
+      width: 100%;
+      overflow-x: hidden;
     }
 
 
@@ -138,6 +139,11 @@ html, body {
 
         }
 
+        .mobile {
+
+          display: none;
+        }
+
         .mobile-nav {
 
           display: none;
@@ -155,12 +161,91 @@ html, body {
 
     }
 
+         .mobile {
+
+              z-index: 1;
+              position:fixed; 
+              width:100%; 
+              height:60px; 
+
+        }
+
+        .mobile a {
+
+          color:white;
+          background:rgba(0,0,0,0.1); 
+          display:inline-block; 
+          padding:0px 30px; 
+          height:80px;
+          text-align:center;
+          font-family: "proxima-nova", sans-serif;
+          text-decoration: none;
+          // text-transform:uppercase; 
+          letter-spacing:2px; 
+          font-weight:500;
+          font-size: 42px;
+
+        } 
+
+      .nav  { 
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+      }
+
+      .nav li {
+
+        float: right;
+
+      }
+
+      .center a {
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+        }
+
+
+    .mobile-content {
+
+      margin-top: 10%;
+
+    }
+
+
+    .nav-text {
+
+      font-size: 48px;
+      font-family: "proxima-nova", sans-serif;
+
+
+    }
+
+    .nav-text a {
+
+      color: #fefefe;
+    }
+
+    
+
+    .mobile-arrow img {
+
+      height: 100px;
+      width: 100px;
+
+    }
+
 
       #hero2{
 
        background:url(Portfolio.png);
        background-position: center; 
-
+       
  
 
       }
@@ -175,24 +260,25 @@ html, body {
 
         width :30%;
         height:8px;
-        background-color: #101010;
+        background-color: #FEFEFE;
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
         margin: 0 auto;
-        margin-top: 5%;
+        margin-top: 8%;
+        margin-bottom: 15%;
 
       }
 
 
         .mobile-description {
 
-            font-weight: 500;
+            font-weight: 600;
             margin-top: -2%;
-            color: #101010;
-            font-size: 32px;
-            margin-left: 22%;
-            margin-right: 22%;
+            color: #FEFEFE;
+            font-size: 48px;
+            margin-left: 8%;
+            margin-right: 8%;
 
 
         }
@@ -243,11 +329,7 @@ html, body {
 
       }
 
-      .nav {
-
-        display: none;
-
-      }
+   
       
 
       #twitternav  {

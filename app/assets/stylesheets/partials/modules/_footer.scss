@@ -2,35 +2,22 @@
 /* ===========================================  Footer =================================================== */
 /* ===========================================         =================================================== */
 
-.footer {
-   position: fixed;
-   left: 0px;
-   bottom: 0px;
-   height: 65px;
-   width: 100%;
-   background-color: #6F588F ;
-   text-align: center;
-}
 
-
-@media (min-width: 200px) and (max-width: 480px) {
-  .social-media {
-    width: 100%;
-  }
-}
 
 
 
 .social-media {
    list-style-type: none;
    padding: 0;
-   margin: 0 auto;
    overflow: hidden;
-   background-color: #6F588F ;
+   background-color: #9DBFDB;
    padding-top: 10px;
-   padding-bottom: 15px;
+   padding-bottom: 10px;
    display: inline-block;
-   width: 80%;
+   width: 100%;
+   height: 100%;
+     margin: 0 auto -60px;
+   overflow: hidden;
 }
 
 
@@ -46,6 +33,8 @@
   color: rgba(255, 255, 255, 0.5);
   position: relative;
   text-decoration: none;
+  border-bottom: none !important;
+  vertical-align: center;
 
 }
 
@@ -58,6 +47,7 @@
   position: absolute;
   content: '';
   -webkit-transition: all 0.35s ease;
+
   transition: all 0.35s ease;
   opacity: 0;
 }
@@ -102,7 +92,7 @@
    text-align: center;
 }
 #githubimg img {
-  margin-top: 2px;
+  margin-top: 4px;
     height: 40px;
     width: 40px
 }

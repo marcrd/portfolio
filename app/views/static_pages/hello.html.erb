@@ -5,51 +5,73 @@
        <body class="home">
 
           <header>
-            
+
+                <!-- Mobile Header -->
+
+               <section class="hero is-medium small" id="livefire">
+                  <div class="hero-content">
+                      <div class="container">
+                             <h2 class="mobile-description"> Hi there! I’m Marc Rudkowski, a front end developer with a passion for product design! </h2>
+                             <div class="cute-box">""</div>             
+                        </div>
+                     </div>
+                </section>
+
+                       <div class="mobile-nav"
+                            <ul>
+                               <li><a href="#">Work</a></li>
+                               <li><a href="#">Contact</a></li>
+                               <li><a href="blog.marcrudkowski.com">Blog</a></li>
+                            </ul>
+                      </div>
+
+                <section id="hero2" class="hero is-large">
+                                   <div class="sky">
+                                        <div class="clouds-one"></div>
+                                        <div class="clouds-two"></div>
+                                    </div>
+                              <div class="hero-content">
+                            <div class="container">               
+                        </div>
+                </section>
+
+                <!-- End Mobile Header --> 
+
+               <!-- Start Desktop Header--> 
+               
               <ul class="nav">
-                 
-                  <li id="twitternav" class="aligner"><%=link_to image_tag("Twitter.png"),  "https://twitter.com/inacubicle", :target => "_blank"%></li>
-                  <li id="githubnav"><%=link_to image_tag("github.png"), "https://github.com/marcrd", :target => "_blank" %></li>
-                   <li id="linkedinnav"><%=link_to image_tag("Linkedin.png"), "https://www.linkedin.com/in/marudkowski", :target => "_blank"%></li>
-                  <li><a href="#">Blog</a></li>
-                   <li><a href="#">Contact</a></li>
-                   <li><a href="#">Work</a></li>
+                  <div class="imagewrapper">           
+                      <li id="twitternav" class="aligner"><%=link_to image_tag("Twitter.png"),  "https://twitter.com/inacubicle", :target => "_blank"%></li>
+                      <li id="githubnav"><%=link_to image_tag("github.png"), "https://github.com/marcrd", :target => "_blank" %></li>
+                       <li id="linkedinnav"><%=link_to image_tag("Linkedin.png"), "https://www.linkedin.com/in/marudkowski", :target => "_blank"%></li>
+                  </div>
 
+                 <div class="navwrapper">
+                       <li><a href="blog.marcrudkowski.com">Blog</a></li>
+                       <li><a href="#">Contact</a></li>
+                       <li><a href="#">Work</a></li>
+                   </div>
               </ul>
-
           </header>
 
-
-
-
           <section id="hero1" class="hero is-fullheight">
-
                     <div class="sky">
-            
-                              <div class="clouds-one"></div>
-
-                              <div class="clouds-two"></div>
-
+                          <div class="clouds-one"></div>
+                          <div class="clouds-two"></div>
                     </div>
 
+                <!-- End Desktop Header--> 
 
               <div class="hero-content">
                   <div class="container">
-              
-                   
-                       <div class="centertext">
-
+                       <div class="centertext">                           
                            <h2> Hi! My name is </h2>
                             <h1 id="marc"> Marc Rudkowski </h1>
                             <h3> A front end developer with a passion for product design </h3>
-                            <span> <%=link_to image_tag("DownButton.png"), "#" %></li> </span>
-
+                            <span class="hvr-hang"> <%=link_to image_tag("DownButton.png"), "#" %></li> </span>
                       </div>
-
-            </div>
-
+                </div>
           </section>
-
 
           <section class="hero is-medium" id="recent">
             <div class="hero-content">
@@ -112,7 +134,7 @@
                     <span id="paintbrush"><%=link_to image_tag("GithubLarge.png") %></span>
                     <h2>Developer Series</h2>
                     <h3>Did I mention I’m a developer? You can see some of my hackathon projects, my portfolio code and side projects</h3>
-                    <a class="button is-large purple light">Check My Github</a>
+                    <a href="https://github.com/marcrd" target="_blank "class="button is-large purple light">Check My Github</a>
                 </div>
             </div>
         </section>
@@ -121,25 +143,21 @@
              <div class="hero-content">
                 <div class="container">
                     <span id="paintbrush"><%=link_to image_tag("Message.png") %></span>
-                    <h3 class="dark">Feel free to drop me a line or contact me at <a href= "mailto:marc.rudkowski@gmail.com">marc.rudkowski@gmail.com</a></h3>
-                    
+                    <h3 class="dark ">Feel free to drop me a line or contact me at <span class="build three"><a href= "mailto:marc.rudkowski@gmail.com">marc.rudkowski@gmail.com</a></span></h3>                   
                 </div>
             </div>
-        </section>
-    
+        </section> 
 
-   <!--
-
-     <div class="footer"> 
-      <ul class="social-media">
-       <li id="githubimg"><%=link_to image_tag("github.png"), "https://github.com/marcrd" %></li>
-       <li id="twitter"><%=link_to image_tag("Twitter.png"), "https://twitter.com/inacubicle" %></li>
-       <li id="linkedin"><%=link_to image_tag("Linkedin.png"), "https://www.linkedin.com/in/marudkowski" %></li>
-       <li id="dribbble"><%=link_to image_tag("Dribbble.png"), "https://dribbble.com/marcrudkowski" %></li>
-       <li id="behance"><%=link_to image_tag("Behance.png"), "https://www.behance.net/marcrudkowski" %></li>
-       <li id="medium"><%=link_to image_tag("Medium.png"), "https://medium.com/@marcrudkowski" %></li>
-      </ul>
-    </div> -->
+     <div class="footercustom"> 
+        <ul class="social-media">
+             <li id="githubimg"><%=link_to image_tag("github.png"), "https://github.com/marcrd" %></li>
+             <li id="twitter"><%=link_to image_tag("Twitter.png"), "https://twitter.com/inacubicle" %></li>
+             <li id="linkedin"><%=link_to image_tag("Linkedin.png"), "https://www.linkedin.com/in/marudkowski" %></li>
+             <li id="dribbble"><%=link_to image_tag("Dribbble.png"), "https://dribbble.com/marcrudkowski" %></li>
+             <li id="behance"><%=link_to image_tag("Behance.png"), "https://www.behance.net/marcrudkowski" %></li>
+             <li id="medium"><%=link_to image_tag("Medium.png"), "https://medium.com/@marcrudkowski" %></li>
+        </ul>
+    </div> 
 
   </body>
 </html>

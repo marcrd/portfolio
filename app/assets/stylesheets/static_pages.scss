@@ -21,49 +21,11 @@ html, body {
     }
 
 
-.center_text {
-    
-    vertical-align: middle;
- 
-}
-
-
-#marc {
-
-    padding-bottom: 15px;
-}
-
-header {
-
-  z-index: 1;
-  position:fixed; 
-  width:100%; 
-  height:60px; 
-
-}
-
-header a {
-
-  color:white;
-  background:rgba(0,0,0,0.1); 
-  display:inline-block; 
-  padding:0px 30px; 
-  height:60px;
-  line-height:60px; 
-  text-align:center;
-  font-family: "proxima-nova", sans-serif;
-  text-decoration: none;
-  text-transform:uppercase; 
-  letter-spacing:2px; 
-  font-weight:700;
-
-} 
 
 .button {
 
   border: none;
   font-family: "proxima-nova", sans-serif;
-
 
 }
 
@@ -73,91 +35,236 @@ header a {
 
 }
 
-.nav  { 
+@media screen and (min-device-width: 801px) {
 
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 
-}
+   #hero2 {
 
-.nav li {
+        display: none;
 
-  float: right;
+    }
 
-}
+      .nav  { 
 
-.nav li a {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
 
-  
+      }
 
-}
+      .nav li {
 
-#twitternav img {
+        float: right;
+
+      }
+
+      .mobile-description {
+
+       display: none;
+
+      }
+
+    #twitternav img {
 
     width: 30px; 
     height: 30px;
 
+    }
+
+      #githubnav img {
+
+          width: 25px;
+          height: 25px;
+          
+
+      }
+
+      #linkedinnav img {
+
+        
+        width: 28px;
+        height: 27px;
+
+      }
+
+
+      #hero1{
+
+       background:url(Portfolio.png);
+        background-size:cover;
+        background-position:center center;
+        background-attachment:fixed;
+
+
+      }
+
+      header {
+
+          z-index: 1;
+          position:fixed; 
+          width:100%; 
+          height:60px; 
+
+        }
+
+        header a {
+
+          color:white;
+          background:rgba(0,0,0,0.1); 
+          display:inline-block; 
+          padding:0px 30px; 
+          height:60px;
+          line-height:60px; 
+          text-align:center;
+          font-family: "proxima-nova", sans-serif;
+          text-decoration: none;
+          text-transform:uppercase; 
+          letter-spacing:2px; 
+          font-weight:700;
+
+        } 
+
+        .small {
+
+          display: none;
+
+        }
+
+        .mobile-nav {
+
+          display: none;
+        }
+
+
+
 }
 
-#githubnav img {
+@media screen and (min-device-width: 320px) and (max-device-width: 800px) {
 
-    width: 25px;
-    height: 25px;
+    #hero1 {
 
-}
+        display: none;
 
-#linkedinnav img {
-
-  width: 28px;
-  height: 27px;
-
-}
+    }
 
 
-#hero1{
+      #hero2{
 
- background:url(Portfolio.png);
-  background-size:cover;
-  background-position:center center;
-  background-attachment:fixed;
+       background:url(Portfolio.png);
+       background-position: center; 
 
+ 
 
-}
+      }
 
+      .small {
 
+        background-color:#fefefe !important;
 
+      }
 
+      .cute-box {
 
-.inner {
+        width :30%;
+        height:8px;
+        background-color: #101010;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: 5%;
 
-  min-height:800px;
-  position: relative;
-
-}
-
-.inner2 {
-
-  min-height:600px;
-  position: relative;
-
-}
-
-
+      }
 
 
-.copy {
+        .mobile-description {
+
+            font-weight: 500;
+            margin-top: -2%;
+            color: #101010;
+            font-size: 32px;
+            margin-left: 22%;
+            margin-right: 22%;
 
 
+        }
 
+        .mobilenav {
 
-  height:20em; 
+              list-style-type: none;
+             padding: 0;
+             overflow: hidden;
+             background-color: #FEFEFE;
+             padding-top: 10px;
+             padding-bottom: 10px;
+             display: inline-block;
+             width: 100%;
+             height: 100%;
+              margin: 0 auto -60px;
+             overflow: hidden;
   
-  width:100%;
+        }
+
+        .mobilenav a {
+
+    
+          display: block;
+          color: rgba(255, 255, 255, 0.5);
+          position: relative;
+          text-decoration: none;
+          border-bottom: none !important;
+          vertical-align: center;
+
+        }
+
+        .mobilenav > li {
+
+            display: block;
+            float: left
+        }
+
+
+
+
+        #hero1{
+
+       background:url(Portfolio.png);
+        background-size:cover;
+        background-attachment:fixed;
+
+
+      }
+
+      .nav {
+
+        display: none;
+
+      }
+      
+
+      #twitternav  {
+
+           display: none;
+
+      }
+
+      #githubnav {
+
+        display: none;
+
+      }
+
+      #linkedinnav {
+
+        display: none;
+
+      }
+
+
+
 
 }
-
 
 
 #paintbrush img {
@@ -209,6 +316,12 @@ header a {
 
 }
 
+.blue:hover, .blue:focus, .blue:active {
+
+  background-color:#80CFE6;
+  color: white;
+
+}
 
 
 .green {
@@ -217,17 +330,28 @@ header a {
 
 }
 
+.green:hover, .green:focus, .green:active {
+
+  background-color:#A8FBB4;
+  color: black;
+
+}
+
+
 .pink {
 
   background-color: #FA4388;
 
 }
 
-.lightred {
 
-  background-color: #FF8188;
+.pink:hover, .pink:focus, .pink:active {
+
+  background-color:#FF7AAC;
+  color: white;
 
 }
+
 
 .purple {
 
@@ -235,8 +359,16 @@ header a {
 
 }
 
-.dark:hover {
 
-  color: #000 !important;
+.purple:hover, .purple:focus, .purple:active {
+
+  background-color:#8E8BE0;
+  color: white;
+
+}
+
+.dark a:hover {
+
+    color: #217E8A;
 
 }

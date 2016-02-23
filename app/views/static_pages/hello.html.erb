@@ -7,29 +7,30 @@
           <header>
 
                 <!-- Mobile Header -->
+                    <header class="mobile">
 
-               <section class="hero is-medium small" id="livefire">
-                  <div class="hero-content">
-                      <div class="container">
-                             <h2 class="mobile-description"> Hi there! I’m Marc Rudkowski, a front end developer with a passion for product design! </h2>
-                             <div class="cute-box">""</div>             
-                        </div>
-                     </div>
-                </section>
+                      <nav>
+                          <ul class="nav center">                        
+                          
+                                   <li><a href="http://blog.marcrudkowski.com">Blog</a></li>
+                                   <li><a class="smoothScroll" href="#contact">Contact</a></li>
+                                   <li><a  class="smoothScroll" href="#work">Work</a></li>
+                               
+                           </ul>
+                      </nav>   
+                      </header>
 
-                       <div class="mobile-nav"
-                            <ul>
-                               <li><a href="#">Work</a></li>
-                               <li><a href="#">Contact</a></li>
-                               <li><a href="blog.marcrudkowski.com">Blog</a></li>
-                            </ul>
-                      </div>
-
-                <section id="hero2" class="hero is-large">
+                       <section id="hero2" class="hero is-medium">
                                    <div class="sky">
                                         <div class="clouds-one"></div>
                                         <div class="clouds-two"></div>
                                     </div>
+
+                                <div class="mobile-content">
+                                     <h2 class="mobile-description"> Hi there! I’m Marc Rudkowski, a front end developer with a passion for product design! </h2>
+                                     <div class="cute-box">""</div>         
+                                    <div class="mobile-arrow"> <%=link_to image_tag("DownButton.png"), "#recent", :class => "smoothScroll" %></div>
+                                </div>
                               <div class="hero-content">
                             <div class="container">               
                         </div>
@@ -38,8 +39,8 @@
                 <!-- End Mobile Header --> 
 
                <!-- Start Desktop Header--> 
-               
-              <ul class="nav">
+            <nav>
+              <ul class="nav center">
                   <div class="imagewrapper">           
                       <li id="twitternav" class="aligner"><%=link_to image_tag("Twitter.png"),  "https://twitter.com/inacubicle", :target => "_blank"%></li>
                       <li id="githubnav"><%=link_to image_tag("github.png"), "https://github.com/marcrd", :target => "_blank" %></li>
@@ -47,20 +48,19 @@
                   </div>
 
                  <div class="navwrapper">
-                       <li><a href="blog.marcrudkowski.com">Blog</a></li>
-                       <li><a href="#">Contact</a></li>
-                       <li><a href="#">Work</a></li>
+                       <li><a  href="http://blog.marcrudkowski.com"  target="_blank">Blog</a></li>
+                       <li><a class="smoothScroll" href="#contact">Contact</a></li>
+                       <li><a class="smoothScroll" href="#work">Work</a></li>
                    </div>
               </ul>
+            </nav>
           </header>
 
           <section id="hero1" class="hero is-fullheight">
                     <div class="sky">
                           <div class="clouds-one"></div>
                           <div class="clouds-two"></div>
-                    </div>
-
-                <!-- End Desktop Header--> 
+                    </div>             
 
               <div class="hero-content">
                   <div class="container">
@@ -68,23 +68,25 @@
                            <h2> Hi! My name is </h2>
                             <h1 id="marc"> Marc Rudkowski </h1>
                             <h3> A front end developer with a passion for product design </h3>
-                            <span class="hvr-hang"> <%=link_to image_tag("DownButton.png"), "#" %></li> </span>
+                            <span class="hvr-hang"> <%=link_to image_tag("DownButton.png"), "#recent", :class => "smoothScroll"%></li> </span>
                       </div>
                 </div>
           </section>
+
+            <!-- End Desktop Header--> 
 
           <section class="hero is-medium" id="recent">
             <div class="hero-content">
                 <div class="container">
                     <span id="paintbrush"><%=link_to image_tag("Paintbrush.png") %></span>
-                    <h3 id="painttext">I build things. Here’s some of my most recent work. Also checkout my <span class="build" id="dribbblepink"><a href="https://dribbble.com/marcrudkowski" target="_blank">Dribbble</a></span> and <span class="buildtwo" id="behanceblue"><a href="https://www.behance.net/marcrudkowski" target="_blank">Behance</a></span>!</h3>
+                    <h3 id="painttext">I build things. Here’s some of my most recent work. Also checkout my <span class="build" id="dribbblepink"><a href="https://dribbble.com/marcrudkowski" target="_blank">Dribbble</a></span> and <span class="buildtwo is-hidden-touch" id="behanceblue"><a href="https://www.behance.net/marcrudkowski" target="_blank">Behance</a></span>!</h3>
 
                 </div>
             </div>
         </section>
 
 
-       <section class="hero is-large" id="livefire">
+       <section class="hero is-large" id="work">
                <div class="hero-content">
                   <div class="container">
                     <span id="livefireimg"><%=link_to image_tag("Livefire.png") %></span>
@@ -139,7 +141,7 @@
             </div>
         </section>
 
-          <section class="hero is-medium" id="message">
+          <section class="hero is-medium" id="contact">
              <div class="hero-content">
                 <div class="container">
                     <span id="paintbrush"><%=link_to image_tag("Message.png") %></span>
@@ -150,12 +152,12 @@
 
      <div class="footercustom"> 
         <ul class="social-media">
-             <li id="githubimg"><%=link_to image_tag("github.png"), "https://github.com/marcrd" %></li>
-             <li id="twitter"><%=link_to image_tag("Twitter.png"), "https://twitter.com/inacubicle" %></li>
-             <li id="linkedin"><%=link_to image_tag("Linkedin.png"), "https://www.linkedin.com/in/marudkowski" %></li>
-             <li id="dribbble"><%=link_to image_tag("Dribbble.png"), "https://dribbble.com/marcrudkowski" %></li>
-             <li id="behance"><%=link_to image_tag("Behance.png"), "https://www.behance.net/marcrudkowski" %></li>
-             <li id="medium"><%=link_to image_tag("Medium.png"), "https://medium.com/@marcrudkowski" %></li>
+             <li id="githubimg"><%=link_to image_tag("github.png"), "https://github.com/marcrd", :target => "_blank" %></li>
+             <li id="twitter"><%=link_to image_tag("Twitter.png"), "https://twitter.com/inacubicle", :target => "_blank" %></li>
+             <li id="linkedin"><%=link_to image_tag("Linkedin.png"), "https://www.linkedin.com/in/marudkowski", :target => "_blank" %></li>
+             <li id="dribbble"><%=link_to image_tag("Dribbble.png"), "https://dribbble.com/marcrudkowski", :target => "_blank" %></li>
+             <li id="behance"><%=link_to image_tag("Behance.png"), "https://www.behance.net/marcrudkowski", :target => "_blank" %></li>
+             <li id="medium"><%=link_to image_tag("Medium.png"), "https://medium.com/@marcrudkowski", :target => "_blank" %></li>
         </ul>
     </div> 
 

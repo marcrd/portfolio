@@ -183,6 +183,114 @@ background: #217E8A;
 /* ===========================================  Animated clouds =================================================== */
 /* ===========================================                              =================================================== */
 
+
+@media screen and (min-device-width: 320px) and (max-device-width: 800px) {
+
+// Making the clouds less crowded
+  .sky {
+
+      height:260px;
+      background: transparent;
+      position:relative;
+      overflow:hidden;
+      -webkit-animation:sky_background 50s ease-out infinite;
+      -moz-animation:sky_background 50s ease-out infinite;
+      -o-animation:sky_background 50s ease-out infinite;
+      -webkit-transform:translate3d(0,0,0);
+      -moz-transform:translate3d(0,0,0);
+      -o-transform:translate3d(0,0,0);
+
+    } 
+    
+    
+    
+    .clouds-one {
+      background:url("Cloud1.png");
+ 
+      position:absolute;
+      left:0;
+      top:0;
+      height:240px;
+      width:300%;
+      -webkit-animation:cloud_one 100s linear infinite;
+      -moz-animation:cloud_one 100s linear infinite;
+      -o-animation:cloud_one 100s linear infinite;
+      -webkit-transform:translate3d(0,0,0);
+      -moz-transform:translate3d(0,0,0);
+      -o-transform:translate3d(0,0,0)
+    }
+    
+
+   .clouds-two {
+      background:url("Cloud3.png");
+
+      position:absolute;
+      left:0;
+      margin-top: 50px;
+      top:0; 
+      height:180px;
+      width:300%;
+      -webkit-animation:cloud_three 100s linear infinite;
+      -moz-animation:cloud_three 100s linear infinite;
+      -o-animation:cloud_three 100s linear infinite;
+      -webkit-transform:translate3d(0,0,0);
+      -moz-transform:translate3d(0,0,0);
+      -o-transform:translate3d(0,0,0)
+    } 
+    
+    
+    
+    @-webkit-keyframes cloud_one {
+      0% {
+        left:0
+      }
+    
+      100% {
+        left:-200%
+      }
+    }
+    
+    @-webkit-keyframes cloud_three {
+      0% {
+        left:0
+      }
+    
+      100% {
+        left:-200%
+      }
+    }
+    
+    
+    
+    @-moz-keyframes cloud_one {
+      0% {
+        left:0
+      }
+    
+      100% {
+        left:-200%
+      }
+    }
+    
+    
+    
+    @-moz-keyframes cloud_three {
+      0% {
+        left:0
+      }
+    
+      100% {
+        left:-200%
+      }
+    }
+
+
+}
+
+
+@media screen and (min-device-width: 801px) {
+
+
     .sky {
 
       height:260px;
@@ -279,7 +387,7 @@ background: #217E8A;
         left:-200%
       }
     }
-
+}
 
 
 /* ===========================================                              =================================================== */

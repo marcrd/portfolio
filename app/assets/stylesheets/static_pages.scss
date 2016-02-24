@@ -160,9 +160,12 @@ html, body {
   .button {
 
   width: 40%;
+  font-size: 24px !important;
 
 
   }
+
+
 
     #hero1 {
 
@@ -184,6 +187,7 @@ html, body {
 
          .mobile {
 
+              
               z-index: 1;
               position:fixed; 
               width:100%; 
@@ -195,33 +199,46 @@ html, body {
 
         .mobile a {
 
-          color:white;
-          background:rgba(0,0,0,0.1); 
+          
+          margin-top: 20px;
+          color:black;
+          background:white; 
           display:inline-block; 
-          padding:0px 30px; 
+          padding:0px 60px; 
           height:80px;
           text-align:center;
           font-family: "proxima-nova", sans-serif;
           text-decoration: none;
-          // text-transform:uppercase; 
-          letter-spacing:2px; 
+          text-transform:uppercase; 
           font-weight:600;
-          font-size: 42px;
+          font-size: 28px;
+          border: #fff;
 
         } 
 
-      .nav  { 
+        .radius {
 
+            border-radius: 50px 0px 0px 50px;
+
+        }
+
+
+      .nav  { 
+        
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
+         width: 100%;
 
       }
 
       .nav li {
 
+
+
         float: right;
+
 
       }
 
@@ -241,20 +258,13 @@ html, body {
     }
 
 
-    .nav-text {
 
-      font-size: 48px;
-      font-family: "proxima-nova", sans-serif;
+   
 
+    .mobile a:active, a:hover, a:focus {
 
+      color: #222222 !important;
     }
-
-    .nav-text a {
-
-      color: #fefefe;
-    }
-
-    
 
     .mobile-arrow img {
 

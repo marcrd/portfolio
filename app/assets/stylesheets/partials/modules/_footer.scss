@@ -4,8 +4,6 @@
 
 
 
-
-
 .social-media {
    list-style-type: none;
    padding: 0;
@@ -119,3 +117,40 @@
     height: 40px;
     width: 40px
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 800px) {
+
+ #githubimg img {
+  margin-top: 4px;
+    height: 60px;
+    width: 60px
+}
+#twitter img {
+    margin-top: 6px;
+    height: 60px;
+    width: 60px
+}
+#linkedin img {
+    height: 60px;
+    width: 60px
+}
+#dribbble img {
+    margin-top: 6px;
+    height: 60px;
+    width: 60px
+}
+#behance img {
+    margin-top: 8px;
+    height: 60px;
+    width: 60px
+}
+#medium img {
+    margin-top: 5px;
+    height: 60px;
+    width: 60px
+}
+
+}
+
+
+

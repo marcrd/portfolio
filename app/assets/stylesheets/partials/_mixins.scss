@@ -1,17 +1,15 @@
 .nav a {
-
   color: rgba(255, 255, 255, 0.5);
   position: relative;
   letter-spacing: 1px;
   text-decoration: none;
-} 
+}
 
 .nav a:hover {
-
   color: #fff;
-
 }
-.navwrapper  a:before,
+
+.navwrapper a:before,
 .navwrapper a:after {
   position: absolute;
   -webkit-transition: all 0.5s ease;
@@ -19,14 +17,12 @@
 }
 
 .navwrapper a:before {
-
   bottom: 20%;
   display: block;
   height: 3px;
   width: 0%;
   content: "";
   background-color: #fff;
-
 }
 
 .navwrapper a:after {
@@ -42,7 +38,6 @@
 
 .navwrapper a:hover:before,
 .navwrapper .current a:before {
-
   opacity: 1;
   width: 50%;
 }
@@ -53,34 +48,25 @@
 }
 
 .nav img {
-  
- 
   vertical-align: center;
-
 }
 
 .nav img:hover {
-
   opacity: 0.8;
 }
-
-
 
 /* ===========================================                                                 =================================================== */
 /* ===========================================  Dribbble Behance Underline  =================================================== */
 /* ===========================================                                                 =================================================== */
 
-
-
 @media screen and (min-device-width: 801px) {
-
-.build {
+  .build {
     display: inline-block;
     position: relative;
     padding-bottom: 3px;
-}
+  }
 
-.build:before {
+  .build:before {
     content: '';
     display: block;
     position: absolute;
@@ -89,9 +75,9 @@
     height: 3px;
     width: 0;
     transition: width 0s ease, background .5s ease;
-}
+  }
 
-.build:after {
+  .build:after {
     content: '';
     display: block;
     position: absolute;
@@ -101,31 +87,29 @@
     width: 0;
     background: #FA4388;
     transition: width .5s ease;
-}
+  }
 
-.build:hover:before {
+  .build:hover:before {
     width: 100%;
     background: #FA4388;
     transition: width .5s ease;
-}
-.build:hover:after {
+  }
+
+  .build:hover:after {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
-}
+  }
 
+  //------------------//
 
-
-
-//------------------//
-
-.buildtwo {
+  .buildtwo {
     display: inline-block;
     position: relative;
     padding-bottom: 3px;
-}
+  }
 
-.buildtwo:before {
+  .buildtwo:before {
     content: '';
     display: block;
     position: absolute;
@@ -134,9 +118,9 @@
     height: 3px;
     width: 0;
     transition: width 0s ease, background .5s ease;
-}
+  }
 
-.buildtwo:after {
+  .buildtwo:after {
     content: '';
     display: block;
     position: absolute;
@@ -146,258 +130,215 @@
     width: 0;
     background: #0071FF;
     transition: width .5s ease;
-}
+  }
 
-.buildtwo:hover:before {
+  .buildtwo:hover:before {
     width: 100%;
     background: #0071FF;
     transition: width .5s ease;
-}
+  }
 
-.buildtwo:hover:after {
+  .buildtwo:hover:after {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
-}
+  }
 
+  //------------------//
 
+  .three:after {
+    background: #217E8A;
+  }
 
-//------------------//
-
-.three:after {
-
-  background: #217E8A;
-  
-}
-
-.three:hover:before {
-
-
-background: #217E8A;
-
-}
-
+  .three:hover:before {
+    background: #217E8A;
+  }
 }
 
 /* ===========================================                              =================================================== */
 /* ===========================================  Animated clouds =================================================== */
 /* ===========================================                              =================================================== */
 
-
 @media screen and (min-device-width: 320px) and (max-device-width: 800px) {
-
-// Making the clouds less crowded
+  // Making the clouds less crowded
   .sky {
+    height: 260px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    -webkit-animation: sky_background 50s ease-out infinite;
+    -moz-animation: sky_background 50s ease-out infinite;
+    -o-animation: sky_background 50s ease-out infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+  }
 
-      height:260px;
-      background: transparent;
-      position:relative;
-      overflow:hidden;
-      -webkit-animation:sky_background 50s ease-out infinite;
-      -moz-animation:sky_background 50s ease-out infinite;
-      -o-animation:sky_background 50s ease-out infinite;
-      -webkit-transform:translate3d(0,0,0);
-      -moz-transform:translate3d(0,0,0);
-      -o-transform:translate3d(0,0,0);
+  .clouds-one {
+    background: url("Cloud1.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 240px;
+    width: 300%;
+    -webkit-animation: cloud_one 100s linear infinite;
+    -moz-animation: cloud_one 100s linear infinite;
+    -o-animation: cloud_one 100s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+  }
 
-    } 
-    
-    
-    
-    .clouds-one {
-      background:url("Cloud1.png");
- 
-      position:absolute;
-      left:0;
-      top:0;
-      height:240px;
-      width:300%;
-      -webkit-animation:cloud_one 100s linear infinite;
-      -moz-animation:cloud_one 100s linear infinite;
-      -o-animation:cloud_one 100s linear infinite;
-      -webkit-transform:translate3d(0,0,0);
-      -moz-transform:translate3d(0,0,0);
-      -o-transform:translate3d(0,0,0)
-    }
-    
+  .clouds-two {
+    background: url("Cloud3.png");
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+    top: 0;
+    height: 180px;
+    width: 300%;
+    -webkit-animation: cloud_three 100s linear infinite;
+    -moz-animation: cloud_three 100s linear infinite;
+    -o-animation: cloud_three 100s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+  }
 
-   .clouds-two {
-      background:url("Cloud3.png");
-
-      position:absolute;
-      left:0;
-      margin-top: 50px;
-      top:0; 
-      height:180px;
-      width:300%;
-      -webkit-animation:cloud_three 100s linear infinite;
-      -moz-animation:cloud_three 100s linear infinite;
-      -o-animation:cloud_three 100s linear infinite;
-      -webkit-transform:translate3d(0,0,0);
-      -moz-transform:translate3d(0,0,0);
-      -o-transform:translate3d(0,0,0)
-    } 
-    
-    
-    
-    @-webkit-keyframes cloud_one {
-      0% {
-        left:0
-      }
-    
-      100% {
-        left:-200%
-      }
-    }
-    
-    @-webkit-keyframes cloud_three {
-      0% {
-        left:0
-      }
-    
-      100% {
-        left:-200%
-      }
-    }
-    
-    
-    
-    @-moz-keyframes cloud_one {
-      0% {
-        left:0
-      }
-    
-      100% {
-        left:-200%
-      }
-    }
-    
-    
-    
-    @-moz-keyframes cloud_three {
-      0% {
-        left:0
-      }
-    
-      100% {
-        left:-200%
-      }
+  @-webkit-keyframes cloud_one {
+    0% {
+      left: 0;
     }
 
+    100% {
+      left: -200%;
+    }
+  }
 
+  @-webkit-keyframes cloud_three {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: -200%;
+    }
+  }
+
+  @-moz-keyframes cloud_one {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: -200%;
+    }
+  }
+
+  @-moz-keyframes cloud_three {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: -200%;
+    }
+  }
 }
-
 
 @media screen and (min-device-width: 801px) {
+  .sky {
+    height: 260px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    -webkit-animation: sky_background 50s ease-out infinite;
+    -moz-animation: sky_background 50s ease-out infinite;
+    -o-animation: sky_background 50s ease-out infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+  }
 
+  .clouds-one {
+    background: url("Cloud1.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 240px;
+    width: 300%;
+    -webkit-animation: cloud_one 60s linear infinite;
+    -moz-animation: cloud_one 60s linear infinite;
+    -o-animation: cloud_one 60s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+  }
 
-    .sky {
+  .clouds-two {
+    background: url("Cloud3.png");
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+    top: 0;
+    height: 180px;
+    width: 300%;
+    -webkit-animation: cloud_three 100s linear infinite;
+    -moz-animation: cloud_three 100s linear infinite;
+    -o-animation: cloud_three 100s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+  }
 
-      height:260px;
-      background: transparent;
-      position:relative;
-      overflow:hidden;
-      -webkit-animation:sky_background 50s ease-out infinite;
-      -moz-animation:sky_background 50s ease-out infinite;
-      -o-animation:sky_background 50s ease-out infinite;
-      -webkit-transform:translate3d(0,0,0);
-      -moz-transform:translate3d(0,0,0);
-      -o-transform:translate3d(0,0,0);
-
-    } 
-    
-    
-    
-    .clouds-one {
-      background:url("Cloud1.png");
- 
-      position:absolute;
-      left:0;
-      top:0;
-      height:240px;
-      width:300%;
-      -webkit-animation:cloud_one 60s linear infinite;
-      -moz-animation:cloud_one 60s linear infinite;
-      -o-animation:cloud_one 60s linear infinite;
-      -webkit-transform:translate3d(0,0,0);
-      -moz-transform:translate3d(0,0,0);
-      -o-transform:translate3d(0,0,0)
+  @-webkit-keyframes cloud_one {
+    0% {
+      left: 0;
     }
-    
 
-   .clouds-two {
-      background:url("Cloud3.png");
+    100% {
+      left: -200%;
+    }
+  }
 
-      position:absolute;
-      left:0;
-      margin-top: 50px;
-      top:0; 
-      height:180px;
-      width:300%;
-      -webkit-animation:cloud_three 100s linear infinite;
-      -moz-animation:cloud_three 100s linear infinite;
-      -o-animation:cloud_three 100s linear infinite;
-      -webkit-transform:translate3d(0,0,0);
-      -moz-transform:translate3d(0,0,0);
-      -o-transform:translate3d(0,0,0)
-    } 
-    
-    
-    
-    @-webkit-keyframes cloud_one {
-      0% {
-        left:0
-      }
-    
-      100% {
-        left:-200%
-      }
+  @-webkit-keyframes cloud_three {
+    0% {
+      left: 0;
     }
-    
-    @-webkit-keyframes cloud_three {
-      0% {
-        left:0
-      }
-    
-      100% {
-        left:-200%
-      }
+
+    100% {
+      left: -200%;
     }
-    
-    
-    
-    @-moz-keyframes cloud_one {
-      0% {
-        left:0
-      }
-    
-      100% {
-        left:-200%
-      }
+  }
+
+  @-moz-keyframes cloud_one {
+    0% {
+      left: 0;
     }
-    
-    
-    
-    @-moz-keyframes cloud_three {
-      0% {
-        left:0
-      }
-    
-      100% {
-        left:-200%
-      }
+
+    100% {
+      left: -200%;
     }
+  }
+
+  @-moz-keyframes cloud_three {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: -200%;
+    }
+  }
 }
-
 
 /* ===========================================                              =================================================== */
 /* ===========================================        Buttons          =================================================== */
 /* ===========================================                              =================================================== */
 
-// Mixin based on https://github.com/IanLunn/Hover/ 
+// Mixin based on https://github.com/IanLunn/Hover/
 
 .button {
-
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -411,17 +352,13 @@ background: #217E8A;
   transition-duration: 0.3s;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
-
 }
-
-
 
 /* ===========================================                              =================================================== */
 /* ===========================================      Down Arrow     =================================================== */
 /* ===========================================                              =================================================== */
 
-// Mixin based on https://github.com/IanLunn/Hover/ 
-
+// Mixin based on https://github.com/IanLunn/Hover/
 
 @-webkit-keyframes hvr-hang {
   0% {
@@ -472,7 +409,6 @@ background: #217E8A;
 }
 
 .hvr-hang {
-
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -481,11 +417,9 @@ background: #217E8A;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 .hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
-
   -webkit-animation-name: hvr-hang-sink, hvr-hang;
   animation-name: hvr-hang-sink, hvr-hang;
   -webkit-animation-duration: .3s, 1.5s;
@@ -500,13 +434,8 @@ background: #217E8A;
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
-
 }
 
 /* ===========================================                                                               =================================================== */
 /* ===========================================      Quick and dirty Flexbox Centering   =================================================== */
 /* ===========================================                                                                =================================================== */
-
-
-
-
